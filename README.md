@@ -1,12 +1,20 @@
 # Repo-1
 N/A
+
 This project is predominently focused on real-life data analytics workflow. From data cleaning, exploratory data analysis (EDA), database design, SQL query, machine learning, and visualization task of a data analyst is performed in this project. This project will help others to understand how to make meaningful incides from an ordinary dataset.
- Dataset Information:
+
+Dataset Information:
+
 This dataset is a polular public dataset taken from Kagal. Ths dataset is in CSV format. It contains data about 1000 movies and their information in 12 columns. The “Revenue (Millions)” and “Metascore” columns have missing values. This dataset requires some cleaning in “Genre” and “Actors” columns for finding most popular movie genres and their average rating and revenues. Actors columns have been used to find out most popular or common actors, also actors involvement in commercially successful movies also top rating movies.
- Data Pre-Processing:
+
+Data Pre-Processing:
+
 Outliers: I worked with outliers in Revenue (Millions), Rating, and Votes columns. I handled the outliers by imputing data.
 For Revenue (Millions) and Votes columns I followed the max 75% average to adjust the outliers values. The average of values falls above 75% of the range is taken to round up the outliers.
 For Votes column, I took a different approach. In this column only 12 values look like outlines. If I used max 75% mean for this column, it will make the dataset more unstable, means the standard deviation will become larger. So, I an approximate closer number to adjust the outliers.
+
 Missing Values: has been handled by using linear regression model. There is moderate positive correlation between Revenue (Millions) and Votes. Votes column has zero missing value. So, I used the Votes column to predict the approximate revenue for the missing columns. Same method has been followed for the Metasoce column. This column has moderate correlation between Rating column, and Rating column has zero missing values. So, I used Rating column to predict approximate value of the Metascore missing values.
- SQL database design
+
+SQL database design:
+
 Using the cleaned IMDB movie rating dataset, I designed a relational SQL database. The table includes in the database are (i) "imdb_table", this table holds all the information, all columns and rows, from the IMDB cleaned datasets. This table has been used for EDA process. (ii) "movies", this table has 'movie_id' column as primary key, 'rank', 'title', 'director', 'year', 'runtime_minutes', 'rating', 'revenue', 'votes', and 'metascore' columns. (iii) "genres" this table has 'genre_id' column as primary key, which uniquely identifies every genre and genre column which holds the name of every genre. (iv) "actors" this table has actor_id column as primary key, which uniquely identifies every actor and actor column that contains the name of every actor. (v) "movies_actors" this table has two foreign key columns, 'movie_id', from the movies table, and 'actor_id' from the actors table (vi) "movies_genres" this table has two foreign key columns, 'movie_id', from the movies table, and 'genre_id' from the genres table.
