@@ -1,5 +1,4 @@
 # Repo-1
-N/A
 
 This project is predominently focused on real-life data analytics workflow. From data cleaning, exploratory data analysis (EDA), database design, SQL query, machine learning, and visualization task of a data analyst is performed in this project. This project will help others to understand how to make meaningful incides from an ordinary dataset.
 
