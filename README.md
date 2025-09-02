@@ -1,4 +1,4 @@
-# Repo-1
+# IMDB Movie Rating (2006 to 2016) Data Analysis
 
 This project is predominently focused on real-life data analytics workflow. From data cleaning, exploratory data analysis (EDA), database design, SQL query, machine learning, and visualization task of a data analyst is performed in this project. This project will help others to understand how to make meaningful incides from an ordinary dataset.
 
